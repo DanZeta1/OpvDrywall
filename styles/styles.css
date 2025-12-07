@@ -66,7 +66,7 @@
 
 /*FLECHITA*/
 .faq-question::after{
-    content: "↓";
+    content: "▼";
     font-size: 14px;
     position: absolute;
     right: 20px;
@@ -105,8 +105,55 @@
 
 
 /*Testimonios: Melissa*/
+/*CONTENEDOR PRINCIPAL 2X2*/
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
 
+/*TARJETA DE TESTIMONIOS*/
+.tarjeta{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
 
+/*FOTO DEL CLIENTE*/
+.tarjeta img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*OPINION TESTIMONIO*/
+.info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.info p {
+    margin-top: 5px;
+    line-height: 1.4;
+    color: #555;
+}
+
+/*RESPONSIVO (CELULAR)*/
+@media (max-width: 700px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /*Terminos y condiciones: Fredo*/
