@@ -25,9 +25,79 @@
 
 
 /*Preguntas frecuentes: Melissa*/
+/*CONTENEDOR FAQ*/
+.faq{
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+}
 
+/*CADA ITEM*/
+.faq-item{
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+}
 
+/*CHECKBOX OCULTO*/
+.toggle{
+    display: none;
+}
 
+/*PREGUNTAS DISEÑO*/
+.faq-question{
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    background: #ffff;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+/*EFECTO HOVER PREGUNTAS*/
+.faq-question:hover{
+    background: #f1f7ff;
+}
+
+/*FLECHITA*/
+.faq-question::after{
+    content: "↓";
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    transition: transform 0.3s;
+}
+
+/*ROTACIÓN FLECHITA*/
+.toggle:checked + .faq-question::after{
+    transform: rotate(180deg);
+}
+
+/*RESPUESTAS (ESCONDIDAS POR DEFECTO)*/
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    background: #fafafa;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+}
+
+/*EXPANSIÓN DE DOMINIO (CHECKBOX ACTIVO)*/
+.toggle:checked ~ .faq-answer{
+    max-height: 300px;
+    padding: 15px;
+}
+
+/*TEXTO PREGUNTAS*/
+.faq-answer p{
+    margin: 0;
+}
 
 /*Porque Opv Drywall: Matute*/
 
