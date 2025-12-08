@@ -544,6 +544,7 @@ grid .row .col-xl-12 { flex-basis: 100%}
 
 /*FLECHITA*/
 .faq-question::after{
+    content: "↓";
     content: "▼";
     font-size: 14px;
     position: absolute;
