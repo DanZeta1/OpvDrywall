@@ -111,7 +111,7 @@ main { margin-top: 135px; }
 .hero {
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+                url('../assets/logo_2.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     text-align: center;
