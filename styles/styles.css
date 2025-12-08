@@ -1,3 +1,5 @@
+/*Fabricio Zelaya*/
+
 :root {
     --principal: #ffffff;
     --texto: #222222;
@@ -291,17 +293,25 @@ footer {
 }
 
 
+
+
+/**************************************************************************/
+
+
 /*Acerca de nosotros: Fredo*/
 
 
 
 
+
+
+
+/*Termine aqui porfavor*/
 /*Nuestros programas: BoJack*/
 
 
 main .caja-np{
     width:100%;
-    height: 70vh;
     height: 30vh;
     background-color:rosybrown;
     position: relative;
@@ -469,140 +479,78 @@ grid .row .col-xl-12 { flex-basis: 100%}
 
 
 
+/*BOJACK ACA TERMINA*/
+
+
+
 /*Galeria de fotos: Stefanny*/
-.gallery{
-    padding: 0.75rem 1rem;
-}
 
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
 
-.pic{
-    width: 300px;
-    max-width: 300px;
-    margin: 0px auto;
-    border: 1px solid #eee;
-    box-shadow: 3px 3px 5px #00000077;
-    overflow:hidden;
-    border-radius: 7px;
-}
 
-.pic img{
-    display: block;
-    padding:0px;
-    margin:0px;
-    width:100%;
-    height:200px;
-    object-fit: cover;
-}
+
+
+
+
+
+
+
+/*STEFANNYYYYYYYYYYYYYYY*/
+
+
 /*Contáctenos: Matute*/
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
-    background: white;
+
+
+
+
+
+
+
+
+
+/*HASTA AQUI MATUTEEEE*/
+
+
+
+/*Preguntas frecuentes: Melissa*/
+/*CONTENEDOR FAQ*/
+.faq{
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
 }
 
-main a {
+/*CADA ITEM*/
+.faq-item{
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+}
+
+/*CHECKBOX OCULTO*/
+.toggle{
+    display: none;
+}
+
+/*PREGUNTAS DISEÑO*/
+.faq-question{
     display: block;
-    text-decoration: none;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-main a > div {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 4px solid #f0f0f0;
-}
-
-main a:hover > div {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-}
-
-/* Alternancia izquierda-derecha */
-main a:nth-child(even) > div {
-    flex-direction: row-reverse;
-}
-
-main a img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-main a p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #555;
-    text-align: center;
-    flex: 1;
-}
-
-main a span {
-    display: inline-block;
-    background: #333;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 25px;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    background: #ffff;
+    transition: background 0.3s;
     font-weight: bold;
-    transition: 0.3s ease;
 }
 
-main a:hover span {
-    background: #555;
+/*EFECTO HOVER PREGUNTAS*/
+.faq-question:hover{
+    background: #f1f7ff;
 }
-
-HEAD
-/* Colores específicos por categoría */
-main a.face > div { border-color: #1877f2; }
-main a.face:hover > div { border-color: #0d5dba; }
-
-main a.gmail > div { border-color: #EA4335; }
-main a.gmail:hover > div { border-color: #c5322a; }
-
-main a.tikitaka > div { border-color: #000000; }
-main a.tikitaka:hover > div { border-color: #333333; }
-
-main a.telef > div { border-color: #25D366; }
-main a.telef:hover > div { border-color: #1da851; }
-
-main a.trab > div { border-color: #FF6B6B; }
-main a.trab:hover > div { border-color: #ee5253; }
-
-/* Responsive */
-@media (max-width: 768px) {
-    main {
-        padding: 30px 15px;
-    }
-
-    main a > div {
-        flex-direction: column !important;
-        padding: 20px;
-        text-align: center;
-    }
-
-    main a img {
-        width: 100px;
-        height: 100px;
-    }
-
-    main a p {
-        font-size: 1rem;
-    }
 
 /*FLECHITA*/
 .faq-question::after{
@@ -615,31 +563,51 @@ main a.trab:hover > div { border-color: #ee5253; }
     transition: transform 0.3s;
 }
 
-@media (max-width: 480px) {
-    main {
-        padding: 20px 10px;
-    }
-
-    main a > div {
-        padding: 15px;
-    }
-
-    main a img {
-        width: 80px;
-        height: 80px;
-    }
-
-    main a p {
-        font-size: 0.9rem;
-    }
-
-    main a span {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
+/*ROTACIÓN FLECHITA*/
+.toggle:checked + .faq-question::after{
+    transform: rotate(180deg);
 }
 
+/*RESPUESTAS (ESCONDIDAS POR DEFECTO)*/
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    background: #fafafa;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+}
+
+/*EXPANSIÓN DE DOMINIO (CHECKBOX ACTIVO)*/
+.toggle:checked ~ .faq-answer{
+    max-height: 300px;
+    padding: 15px;
+}
+
+/*TEXTO PREGUNTAS*/
+.faq-answer p{
+    margin: 0;
+}
+
+
+/*MELISSA NO TOCAR PORFAVOR*/
+
+
+
+
 /*Porque Opv Drywall: Matute*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*MATUTE AQUI VAAA*/
 
 
 
@@ -694,10 +662,37 @@ main a.trab:hover > div { border-color: #ee5253; }
         grid-template-columns: 1fr;
     }
 }
-}
+
+
+
+/*MELISSA AQUI ACABO*/
+
+
 
 /*Terminos y condiciones: Fredo*/
 
 
 
+
+
+
+
+
+/*FREDO TERMINE AQUI*/
+
+
 /*Formulario de registro: BoJack*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VOS SOS EL ULTIMO FREDOOOOO*/
