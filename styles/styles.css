@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-body {
+body:not(.body-reg):not(.body-np) {
     font-family: 'Poppins', sans-serif;
     color: var(--texto);
     line-height: 1.7;
@@ -105,7 +105,7 @@ nav a:focus::after {
 nav a:hover, nav a:focus { color: var(--acento); }
 
 /* Main */
-main { margin-top: 135px; }
+main:not(.main-reg):not(.main-np) { margin-top: 135px; }
 
 /* Hero */
 .hero {
@@ -299,20 +299,17 @@ footer {
 /*Nuestros programas: BoJack*/
 
 
-main .caja-np{
-    width:100%;
+main .caja-np {
+    width: 100%;
     height: 70vh;
-    height: 30vh;
-    background-color:rosybrown;
     position: relative;
+    overflow: hidden;
+    background: url('../assets/imagen1.jpg') top/cover no-repeat;
+    display: block;
 }
 
-main .caja-np img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-}
+
+
 
 main .caja-np h1{
     position: absolute;
@@ -323,7 +320,8 @@ main .caja-np h1{
     text-align: center;
     margin: 0;
     font-size: 2.25rem;
-
+    color: black;
+    z-index: 1;
 }
 
 .t-contenedor {
@@ -357,6 +355,8 @@ main .caja-np h1{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    object-position: center;
+    
 }
 
 .card-middle{
@@ -500,7 +500,7 @@ grid .row .col-xl-12 { flex-basis: 100%}
 }
 /*Contáctenos: Matute*/
 
-main {
+main:not(.main-reg):not(.main-np){
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
@@ -696,8 +696,79 @@ main a.trab:hover > div { border-color: #ee5253; }
 }
 }
 
+
 /*Terminos y condiciones: Fredo*/
 
 
 
 /*Formulario de registro: BoJack*/
+body.body-reg{
+   
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto);
+    line-height: 1.7;
+    background: var(--principal);
+    margin: 0;       
+    padding: 0;     
+    min-height: 100vh; 
+}
+
+.main-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-reg h2 {
+    text-align: center;
+}
+
+.main-reg .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+
+}
+
+.main-reg form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-reg label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.main-reg input{
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.main-reg .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.main-reg button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.main-reg button:hover {
+    background-color: #0056b3;
+}
