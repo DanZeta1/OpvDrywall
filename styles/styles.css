@@ -164,11 +164,6 @@ section p.lead {
 .imagina { background: #000; color: white; }
 .imagina h2, .imagina .lead { color: white; }
 
-/* QUIÉNES SOMOS */
-.about-us {
-    padding: 130px 20px;
-    background: var(--fondo-seccion);
-}
 .section-title {
     font-size: 3.2rem;
     text-align: center;
@@ -182,7 +177,6 @@ section p.lead {
     margin-bottom: 60px;
     text-align: center;
 }
-.mission-vision-card .icon { font-size: 3.8rem; margin-bottom: 20px; }
 .mission-vision-card h3 { font-size: 2.3rem; margin-bottom: 25px; }
 .values-title { font-size: 2.6rem; text-align: center; margin: 90px 0 55px; }
 .values-grid {
