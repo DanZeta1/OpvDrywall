@@ -1,11 +1,11 @@
 /*Fabricio Zelaya*/
 
 :root {
-    --principal: #ffffff;
+    --principal: #9fa7b1;
     --texto: #222222;
     --texto-claro: #555555;
     --acento: #000000;        /* ← Aquí pondrás tu color final (azul, dorado, etc.) */
-    --fondo-seccion: #f9f9f9;
+    --fondo-seccion: #9fa7b1;
 }
 
 *, *::before, *::after {
@@ -23,28 +23,7 @@ body:not(.body-reg):not(.body-np) {
 
 a { text-decoration: none; }
 
-/* Skip link */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 6px;
-    background: #000;
-    color: white;
-    padding: 8px 12px;
-    z-index: 10000;
-    border-radius: 0 0 4px 4px;
-}
-.skip-link:focus { top: 6px; }
 
-/* Topbar */
-.topbar {
-    background: #000;
-    color: white;
-    text-align: center;
-    padding: 12px 20px;
-    font-size: 0.95rem;
-    font-weight: 500;
-}
 
 /* Header */
 header {
@@ -117,7 +96,7 @@ main:not(.main-reg):not(.main-np) { margin-top: 135px; }
     display: flex;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #9fa7b1;
 }
 .hero-content {
     max-width: 900px;
