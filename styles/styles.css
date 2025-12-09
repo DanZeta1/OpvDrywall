@@ -549,10 +549,10 @@ grid .row .col-xl-12 { flex-basis: 100%}
 
 /*Galeria de fotos: Stefanny*/
 .gallery{
-    padding: 1rem;
+    padding: 5rem;
 }
 
-.contenedor{
+.contener{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -562,7 +562,7 @@ grid .row .col-xl-12 { flex-basis: 100%}
 .pic{
     width: 300px;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 20px;
     border: 1px solid #eee;
     box-shadow: 3px 3px 5px #00000077;
     overflow: hidden;
@@ -593,6 +593,48 @@ grid .row .col-xl-12 { flex-basis: 100%}
     transform: scale(1.15);
 }
 
+.grids {
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+.grids .rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grids .rows [class*='col-']{
+    flex-shrink: 0;
+    flex-grow: 0;
+    min-width:0px;
+}
+.cols{
+    justify-items: center;
+}
+.grids .rows .cols { flex-basis: 100%;}
+
+
+@media (min-width:720px) {
+    .gallery{
+        padding: 5rem;
+    }
+    .grids .rows .cols { flex-basis: calc(100% / 12 * 6);}
+}
+
+@media (min-width:1025px) {
+    .gallery{
+        padding: 5rem;
+    }
+    .grids .rows .cols{ flex-basis: calc(100% / 12 * 3);}
+}
+
+@media (min-width:1301px) {
+    .gallery{
+        padding: 5rem;
+    }
+    .grids .rows .cols { flex-basis: calc(100% / 12 * 4);}
+}
 /*Contáctenos: Matute*/
 
 main:not(.main-reg):not(.main-np).yamanos{
