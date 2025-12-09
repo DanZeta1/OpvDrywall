@@ -301,6 +301,97 @@ footer {
 /*Acerca de nosotros: Fredo*/
 
 
+.hero {
+    width: 100%;
+    height: 350px; 
+    background-image: url("../assets/imagen11.jpg");
+    background-size: cover;   
+    background-position: center; 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.hero-content {
+    text-align: center;
+    color: white;
+    background: rgba(8, 8, 8, 0.4); 
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.hero h2{
+    color: #f2f7f4;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px auto;
+    
+    padding: 10px 25px;
+    background: #31c77f;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.btn:hover {
+    background: #28a86a;
+    
+}
+
+.hero2 {
+    width: 100%;
+    height: 350px; 
+    background-image: url("../assets/imagen5.jpg");
+    background-size: cover;   
+    background-position: center; 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.hero2-content {
+    text-align: center;
+    color: white;
+    background: rgba(8, 8, 8, 0.4); 
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.hero2 h2{
+    color: #f2f7f4;
+}
+
+.cuerpo h1{
+    text-align: center;
+}
+
+.cuerpo p{
+    text-align: justify;
+}
+
+.fila {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.fila img{
+    width: 440px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.texto {
+    flex: 1; 
+}
 
 
 
