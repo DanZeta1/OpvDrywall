@@ -27,7 +27,7 @@ a { text-decoration: none; }
 
 /* Header */
 header {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -86,7 +86,7 @@ nav a:focus::after {
 nav a:hover, nav a:focus { color: var(--acento); }
 
 /* Main */
-main:not(.main-reg):not(.main-np) { margin-top: 135px; }
+main:not(.main-reg):not(.main-np) { margin-top: 0; }
 
 /* Hero */
 .hero {
@@ -595,7 +595,7 @@ grid .row .col-xl-12 { flex-basis: 100%}
 
 /*Contáctenos: Matute*/
 
-main:not(.main-reg):not(.main-np){
+main:not(.main-reg):not(.main-np).yamanos{
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
