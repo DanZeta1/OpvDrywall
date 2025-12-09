@@ -498,6 +498,22 @@ grid .row .col-xl-12 { flex-basis: 100%}
     display: block;
 }
 
+.social a i {
+    display: none;
+}
+
+.social a .icon {
+    width: 28px;         
+    height: 28px;
+    object-fit: contain;
+    pointer-events: none;
+    transition: transform .3s ease;
+}
+
+.social a:hover .icon {
+    transform: scale(1.15);
+}
+
 /*Contáctenos: Matute*/
 
 
