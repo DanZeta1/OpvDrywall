@@ -1182,6 +1182,187 @@ main p1.res {
 
 /*Terminos y condiciones: Fredo*/
 
+/* ======== ESTILOS BASE ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ======== CONTENEDORES ======== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ======== HEADER ======== */
+header {
+  background: #f6f6f6;
+  border-bottom: 2px solid #ddd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 160px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* ======== CUERPO ======== */
+.cuerpo_terminos_codiciones {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cuerpo_terminos_codiciones h1 {
+  font-size: 1.6rem;
+  color: #111;
+  margin: 2rem 0 1rem;
+  text-align: left;
+}
+
+.cuerpo_terminos_codiciones p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 1rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00b4ff;
+}
+
+.social a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #00b4ff;
+}
+
+/* ======== MEDIA QUERIES ======== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cuerpo_terminos_codiciones {
+    padding: 1.5rem;
+  }
+
+  .cuerpo_terminos_codiciones h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .cuerpo_terminos_codiciones p {
+    font-size: 0.98rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .logo img {
+    width: 130px;
+  }
+
+  nav ul {
+    gap: 0.3rem;
+  }
+
+  .cuerpo_terminos_codiciones {
+    padding: 1rem;
+  }
+
+  .cuerpo_terminos_codiciones h1 {
+    font-size: 1.2rem;
+  }
+
+  .cuerpo_terminos_codiciones p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
 
 
 
