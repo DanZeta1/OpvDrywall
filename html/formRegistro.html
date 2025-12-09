@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="html-reg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Registro</title>
 </head>
-<body>
+<body class="body-reg">
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
     <div class="topbar" aria-label="Barra superior informativa">
@@ -18,7 +18,7 @@
         <div class="logo">
             <!-- Ruta relativa limpia y profesional -->
             <a href="#inicio">
-                <img src="assets/logo-opv-drywall.png" alt="OPV Drywall - Instalación y Acabado Profesional">
+                <img src="../assets/logo_1.png" alt="OPV Drywall - Instalación y Acabado Profesional">
             </a>
         </div>
 
@@ -36,9 +36,26 @@
 </header>
 
 
-<main>
+<main class="main-reg">
 
+  <div class="form-container">
+        <h2>Registro</h2>
+        <form id="commentForm" novalidate>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError">El nombre es requerido.</span>
 
+            <label for="correo">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError">El email es requerido y debe ser válido.</span>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone">
+            <span class="error" id="phoneError">El número de teléfono es requerido.</span>
+
+            <button id="btnSubmit" type="submit">Enviar</button>
+        </form>
+    </div>
 
 
 </main>
@@ -70,5 +87,7 @@
         </p>
     </div>
 </footer>
+<script src="../javascript/javascript.js"></script>
+
 </body>
 </html>
