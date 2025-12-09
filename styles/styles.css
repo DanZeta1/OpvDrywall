@@ -1,3 +1,5 @@
+/*Fabricio Zelaya*/
+
 :root {
     --principal: #ffffff;
     --texto: #222222;
@@ -12,7 +14,7 @@
     box-sizing: border-box;
 }
 
-body {
+body:not(.body-reg):not(.body-np) {
     font-family: 'Poppins', sans-serif;
     color: var(--texto);
     line-height: 1.7;
@@ -105,7 +107,7 @@ nav a:focus::after {
 nav a:hover, nav a:focus { color: var(--acento); }
 
 /* Main */
-main { margin-top: 135px; }
+main:not(.main-reg):not(.main-np) { margin-top: 135px; }
 
 /* Hero */
 .hero {
@@ -291,27 +293,34 @@ footer {
 }
 
 
+
+
+/**************************************************************************/
+
+
 /*Acerca de nosotros: Fredo*/
 
 
 
 
+
+
+
+/*Termine aqui porfavor*/
 /*Nuestros programas: BoJack*/
 
 
-main .caja-np{
-    width:100%;
-    height: 30vh;
-    background-color:rosybrown;
+main .caja-np {
+    width: 100%;
+    height: 70vh;
     position: relative;
+    overflow: hidden;
+    background: url('../assets/imagen1.jpg') top/cover no-repeat;
+    display: block;
 }
 
-main .caja-np img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-}
+
+
 
 main .caja-np h1{
     position: absolute;
@@ -322,7 +331,8 @@ main .caja-np h1{
     text-align: center;
     margin: 0;
     font-size: 2.25rem;
-
+    color: black;
+    z-index: 1;
 }
 
 .t-contenedor {
@@ -356,6 +366,8 @@ main .caja-np h1{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    object-position: center;
+    
 }
 
 .card-middle{
@@ -468,6 +480,10 @@ grid .row .col-xl-12 { flex-basis: 100%}
 
 
 
+/*BOJACK ACA TERMINA*/
+
+
+
 /*Galeria de fotos: Stefanny*/
 .gallery{
     padding: 1rem;
@@ -498,8 +514,27 @@ grid .row .col-xl-12 { flex-basis: 100%}
     display: block;
 }
 
+
+
+
+
+
+
+/*STEFANNYYYYYYYYYYYYYYY*/
+
+
 /*Contáctenos: Matute*/
 
+
+
+
+
+
+
+
+
+
+/*HASTA AQUI MATUTEEEE*/
 
 
 
@@ -579,8 +614,141 @@ grid .row .col-xl-12 { flex-basis: 100%}
     margin: 0;
 }
 
+
+/*MELISSA NO TOCAR PORFAVOR*/
+
+
+
+
 /*Porque Opv Drywall: Matute*/
 
+main:not(.main-reg):not(.main-np){
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    background: white;
+}
+
+main a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+main a > div {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 4px solid #f0f0f0;
+}
+
+main a:hover > div {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+main a:nth-child(even) > div {
+    flex-direction: row-reverse;
+}
+
+main a img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+main a p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center;
+    flex: 1;
+}
+
+main a span {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+main a:hover span {
+    background: #555;
+}
+
+
+main a.face > div { border-color: #1877f2; }
+main a.face:hover > div { border-color: #0d5dba; }
+
+main a.gmail > div { border-color: #EA4335; }
+main a.gmail:hover > div { border-color: #c5322a; }
+
+main a.tikitaka > div { border-color: #000000; }
+main a.tikitaka:hover > div { border-color: #333333; }
+
+main a.telef > div { border-color: #25D366; }
+main a.telef:hover > div { border-color: #1da851; }
+
+main a.trab > div { border-color: #FF6B6B; }
+main a.trab:hover > div { border-color: #ee5253; }
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 30px 15px;
+    }
+
+    main a > div {
+        flex-direction: column !important;
+        padding: 20px;
+        text-align: center;
+    }
+
+    main a img {
+        width: 100px;
+        height: 100px;
+    }
+
+    main a p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px 10px;
+    }
+
+    main a > div {
+        padding: 15px;
+    }
+
+    main a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    main a p {
+        font-size: 0.9rem;
+    }
+
+    main a span {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
 
 
 
@@ -636,8 +804,107 @@ grid .row .col-xl-12 { flex-basis: 100%}
 }
 
 
+
+/*MELISSA AQUI ACABO*/
+
+
+
+
 /*Terminos y condiciones: Fredo*/
 
 
 
+
+
+
+
+
+/*FREDO TERMINE AQUI*/
+
+
 /*Formulario de registro: BoJack*/
+body.body-reg{
+   
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto);
+    line-height: 1.7;
+    background: var(--principal);
+    margin: 0;       
+    padding: 0;     
+    min-height: 100vh; 
+}
+
+.main-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-reg h2 {
+    text-align: center;
+}
+
+.main-reg .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+
+}
+
+.main-reg form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-reg label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.main-reg input{
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.main-reg .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.main-reg button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.main-reg button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VOS SOS EL ULTIMO BOJACK*/
