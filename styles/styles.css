@@ -819,6 +819,51 @@ main a.trab:hover > div { border-color: #ee5253; }
     margin-top: -1px;
 }
 
+/*RESPONSIVIDAD*/
+/* CELULARES */
+@media (max-width: 480px) {
+
+    .faq-contenedor {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .faq-question::after {
+        right: 12px;
+        top: 16px;
+    }
+
+    .faq-answer {
+        font-size: 15px;
+        padding: 0 12px;
+    }
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+
+    .faq-contenedor {
+        width: 92%;
+    }
+
+    .faq-question {
+        font-size: 17px;
+    }
+}
+
+/* GRANDES */
+@media (min-width: 1200px) {
+
+    .faq-contenedor {
+        max-width: 850px; 
+    }
+}
+
 
 
 /*MELISSA NO TOCAR PORFAVOR*/
@@ -932,14 +977,73 @@ main p1.res {
     color: #555;
 }
 
-/*RESPONSIVO (CELULAR)*/
+/*RESPONSIVO*/
+/* PANTALLA MEDIANA*/
+@media (max-width: 900px){
+    .contenedor{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjeta{
+        padding: 12px;
+    }
+
+    .tarjeta img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* HORIZONTAL(?) */
 @media (max-width: 700px){
     .contenedor{
         grid-template-columns: 1fr;
     }
+
+    .tarjeta{
+        flex-direction: row;
+    }
 }
 
+/* PEQUEÑOS */
+@media (max-width: 480px){
+    .tarjeta{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .tarjeta img{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .info h3{
+        font-size: 16px;
+    }
+
+    .info p{
+        font-size: 14px;
+    }
+}
+
+/* GRANDES */
+@media (min-width: 1400px){
+    .contenedor{
+        max-width: 1100px;
+    }
+
+    .tarjeta{
+        padding: 20px;
+    }
+
+    .tarjeta img{
+        width: 100px;
+        height: 100px;
+    }
+}
 
 /*MELISSA AQUI ACABO*/
 
