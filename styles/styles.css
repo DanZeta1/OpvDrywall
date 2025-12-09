@@ -728,48 +728,74 @@ main a.trab:hover > div { border-color: #ee5253; }
 
 
 /*Preguntas frecuentes: Melissa*/
-/*CONTENEDOR FAQ*/
-.faq{
+/* CONTENEDOR PRINCIPAL FAQ */
+.faq-contenedor {
     width: 90%;
     max-width: 700px;
     margin: 30px auto;
-}
-
-/*CADA ITEM*/
-.faq-item{
-    background: white;
+    background: #f9f9f9; /* Fondo uniforme */
     border-radius: 10px;
-    margin-bottom: 12px;
-    padding: 0;
-    border: 1px solid #dcdcdc;
-    overflow: hidden;
+    padding: 15px;
 }
 
-/*CHECKBOX OCULTO*/
-.toggle{
+/* MIS PRECIOSOS (CONTIENE TODOS LOS ITEMS) */
+.faq-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ITEMS */
+.faq-item {
+    background: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 0; /* sin separación inicial */
+}
+
+/* EXPANSION DE DOMINIO (SEPARADO CUANDO SE EXPANDE) */
+.faq-toggle:checked ~ .faq-answer {
+    max-height: 300px;
+    padding: 15px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* BORDE REDONDO PRIMER ITEM */
+.faq-item:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* BORDE REDONDO ULTIMO ITEM */
+.faq-item:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* NO ME VEZ (CHECK OCULTO) */
+.faq-toggle {
     display: none;
 }
 
-/*PREGUNTAS DISEÑO*/
-.faq-question{
+/* NADA DE PREGUNTAS TONTAS (PREGUNTA) */
+.faq-question {
     display: block;
     padding: 15px;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
-    background: #ffff;
+    background: #fff;
     transition: background 0.3s;
-    font-weight: bold;
 }
 
-/*EFECTO HOVER PREGUNTAS*/
-.faq-question:hover{
+/* HOVER DE LA PREGUNTA */
+.faq-question:hover {
     background: #f1f7ff;
 }
 
-/*FLECHITA*/
-.faq-question::after{
-    content: "↓";
+/* FLECHITA */
+.faq-question::after {
     content: "▼";
     font-size: 14px;
     position: absolute;
@@ -778,30 +804,21 @@ main a.trab:hover > div { border-color: #ee5253; }
     transition: transform 0.3s;
 }
 
-/*ROTACIÓN FLECHITA*/
-.toggle:checked + .faq-question::after{
+/* A WE MI MENTE (ROTACION DE FLECHA) */
+.faq-toggle:checked + .faq-question::after {
     transform: rotate(180deg);
 }
 
-/*RESPUESTAS (ESCONDIDAS POR DEFECTO)*/
-.faq-answer{
+/* AQUI ESTA TU RESPUESTA (RESPUESTA) */
+.faq-answer {
     max-height: 0;
     overflow: hidden;
     background: #fafafa;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
     padding: 0 15px;
+    margin-top: -1px;
 }
 
-/*EXPANSIÓN DE DOMINIO (CHECKBOX ACTIVO)*/
-.toggle:checked ~ .faq-answer{
-    max-height: 300px;
-    padding: 15px;
-}
-
-/*TEXTO PREGUNTAS*/
-.faq-answer p{
-    margin: 0;
-}
 
 
 /*MELISSA NO TOCAR PORFAVOR*/
