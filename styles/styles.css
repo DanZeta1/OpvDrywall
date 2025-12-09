@@ -548,33 +548,33 @@ grid .row .col-xl-12 { flex-basis: 100%}
 
 
 /*Galeria de fotos: Stefanny*/
-.gallery{ 
-    padding: 1rem; 
-} 
+.gallery{
+    padding: 1rem;
+}
 
-.contenedor{ 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 1rem; 
-    justify-content: center; 
-} 
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
 
-.pic{ 
-    width: 100%; 
-    max-width: 280px; 
-    margin: 0 auto; 
-    border: 1px solid #eee; 
-    box-shadow: 3px 3px 5px #00000077; 
-    overflow: hidden; 
-    border-radius: 7px; 
-} 
+.pic{
+    width: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 5px #00000077;
+    overflow: hidden;
+    border-radius: 7px;
+}
 
-.pic img{ 
-    width: 100%; 
-    height: auto; 
-    aspect-ratio: 3 / 2; 
-    object-fit: cover; 
-    display: block; 
+.pic img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
 }
 
 .social a i {
@@ -592,7 +592,6 @@ grid .row .col-xl-12 { flex-basis: 100%}
 .social a:hover .icon {
     transform: scale(1.15);
 }
-
 
 /*Contáctenos: Matute*/
 
